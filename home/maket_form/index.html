@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    }
+    .clearfix:after{ 
+    content: ""; 
+    display: block; 
+    clear: both 
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        display: inline;
+    }
+    div{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    legend{
+        font-size: 20px;
+        font-style: italic;
+    }
+    p{
+        position: absolute;
+    }
+    .boba{
+        margin-left: 200px;
+    }
+
+    @media all and (max-width:600px){
+        li{
+            display: block;
+        }
+        p{
+            position: static;
+        }
+        .boba{
+            margin-left: 0px;
+        }
+    }
+
+</style>
+<body>
+<form  action="http://fe.it-academy.by/TestForm.php" target="_blank" method="get">
+
+    <legend> Для публикации вашей статьи, заполните пожалуйста следующую форму: </legend>
+    <div class="clearfix">   
+        <p>Название статьи:</p>
+        <input type="text" class="boba text">
+    </div>
+    <div class="clearfix">
+        <p>Рубрика:</p> 
+        <select name="рубрика" class="boba">
+            <option value="1">Компьютерная техника</option>
+            <option value="2">Графика и дезайн</option>
+            <option value="3">Програмирование</option>
+        </select>
+    </div>
+    <p>Публикация:</p> 
+    <ul class="clearfix boba">
+        <li><input name="publication" type="radio">на сайте</li>
+        <li><input name="publication" type="radio">в журнале</li>
+        <li><input name="publication" type="radio">на сайте и в журнале</li>
+    </ul>
+    <div class="clearfix">
+        <p>Разрешить комментарии:</p>
+        <input class="boba" type="checkbox">
+    </div>
+    <div class="clearfix">
+        <p>Текст статьи:</p>
+        <textarea name="article" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <input class="bottom" type="submit" value="Опубликовать">
+    </div>
+
+</form>
+   
+</body>
+</html>
