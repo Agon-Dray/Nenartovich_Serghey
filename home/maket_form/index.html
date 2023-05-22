@@ -9,8 +9,8 @@
 
 <style>
     *{
-    margin: 0px;
-    padding: 0px;
+    margin: 1px;
+    padding: 1px;
     }
     .clearfix:after{ 
     content: ""; 
@@ -32,21 +32,49 @@
         font-style: italic;
     }
     p{
+        width: 200px;
         position: absolute;
     }
     .boba{
         margin-left: 200px;
     }
+    .textarea{
+        position: relative;
+        top: 20px;
+        width: 100%;
+    }
+    .bottom{
+        position: relative;
+        top: 20px;
+    }
+    .boba.text{
+            width: 100%;
+        }
 
     @media all and (max-width:600px){
         li{
             display: block;
         }
         p{
+            width: 200px;
             position: static;
         }
         .boba{
             margin-left: 0px;
+        }
+        .boba.text{
+            width: 90%;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .textarea{
+            position: static;
+            width: 100%;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .bottom{
+            position: static;
         }
     }
 
@@ -55,11 +83,11 @@
 <form  action="http://fe.it-academy.by/TestForm.php" target="_blank" method="get">
 
     <legend> Для публикации вашей статьи, заполните пожалуйста следующую форму: </legend>
-    <div class="clearfix">   
+    <div>   
         <p>Название статьи:</p>
         <input type="text" class="boba text">
     </div>
-    <div class="clearfix">
+    <div>
         <p>Рубрика:</p> 
         <select name="рубрика" class="boba">
             <option value="1">Компьютерная техника</option>
@@ -68,18 +96,18 @@
         </select>
     </div>
     <p>Публикация:</p> 
-    <ul class="clearfix boba">
+    <ul class="boba">
         <li><input name="publication" type="radio">на сайте</li>
         <li><input name="publication" type="radio">в журнале</li>
         <li><input name="publication" type="radio">на сайте и в журнале</li>
     </ul>
-    <div class="clearfix">
+    <div>
         <p>Разрешить комментарии:</p>
         <input class="boba" type="checkbox">
     </div>
-    <div class="clearfix">
+    <div>
         <p>Текст статьи:</p>
-        <textarea name="article" id="" cols="30" rows="10"></textarea>
+        <textarea name="article" class="textarea"></textarea>
     </div>
     <div>
         <input class="bottom" type="submit" value="Опубликовать">
