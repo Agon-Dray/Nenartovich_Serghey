@@ -6,15 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #background {background:url(img/1.1.png) no-repeat 50px 57px,
-                                url(img/img3.png) no-repeat 10px -30px,
-                                url(img/1.png) no-repeat;                            
-                            height: 250px; width: 500px;}
+        .one{
+            position: relative;
+            top: 150px;
+        }
+        .two{
+            position: absolute;
+            top: 127px;
+            left: 10px;
+            transition: 0.5s;
+        }
+        .three{
+            position: absolute;
+            top: 218px;
+            left: 58px;
+        }
+        div:hover .two{
+            top: -50px;
+        }
+
     </style>
 </head>
 <body>
 
-<div id="background"></div>
+<div>
+    <img class="one" src="img/1.png" alt="">
+    <img class="two" src="img/img3.png" alt="">
+    <img class="three" src="img/1.1.png" alt="">
+</div>
+
 
 </body>
 </html>

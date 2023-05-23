@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+   .clearfix:after{ 
+    content: ""; 
+    display: block; 
+    clear: both
+    }
+    .imgset{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        text-align: justify;
+    }
+    .img1{
+        position: absolute;
+        left: 85px;
+        top: 65px;
+        z-index: 2;
+    }
+    .img2{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .img3{
+        position: absolute;
+        top: 10px;
+        left: 225px;
+    }
+    .img4{
+        position: absolute;
+        top: 210px;
+        left: 110px;
+    }
+    img:hover{
+        z-index: 3;
+    }
+</style>
+
+</head>
+<body>
+    
+<div>
+    <p class="clearfix">
+    Я к вам пишу – чего же боле? Что я могу еще сказать? Теперь, я знаю, в вашей воле Меня презреньем наказать. 
+    Но вы, к моей несчастной доле Хоть каплю жалости храня, Вы не оставите меня. 
+    Сначала я молчать хотела; Поверьте: моего стыда Вы не узнали б никогда, 
+    Когда б надежду я имела Хоть редко, хоть в неделю раз В деревне нашей видеть вас, Чтоб только слышать ваши речи, 
+    Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи.
+    </p>
+    <div class="imgset">
+        <img class="img1" src="img/No_smoking.png" alt="nosmok">
+        <img class="img2" src="img/biohazard.png" alt="biohazard">
+        <img class="img3" src="img/Man-and-woman.png" alt="mnw">
+        <img class="img4" src="img/Yin_and_Yang.png" alt="yay">
+    </div>
+</div>
+
+</body>
+</html>
