@@ -1,0 +1,47 @@
+
+.checkbox1 label{
+    user-select: none;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(235, 230, 230);
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.788) inset;
+}
+.checkbox1 label::before{
+    content: '';
+    width: 23px;
+    height: 23px;
+    background-color: blueviolet;
+    border-radius: 13px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288) inset;
+    
+}
+.checkbox1 input:checked+label{
+    background-color: chartreuse;
+}
+.checkbox1 input:checked+label::before{
+    left: 42px;
+}
+.checkbox1 input{
+    display: none;
+}
+
+.checkbox2 input{
+    display: none;
+}
+.checkbox2 label{
+    user-select: none;
+    display: inline-block;
+    width: 235px;
+    height: 235px;
+    background: url(../img/png-transparent-checkbox-check-mark-computer-icons-symbol-checkmark-icon-miscellaneous-angle-text.png) -323px -276px;
+}
+.checkbox2 input:checked+label{
+    background: url(../img/png-transparent-checkbox-check-mark-computer-icons-symbol-checkmark-icon-miscellaneous-angle-text.png) -323px 0px;
+}
