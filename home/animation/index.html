@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+        }
+        .animation{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation: anim 3s infinite ;
+        }
+        @keyframes anim{
+            from{
+                border-radius: 0px;
+            }
+            50%{
+                margin-left: 100px;
+                border-radius: 25px;
+            }
+            100%{
+                border-radius: 100px;
+                width: 0;
+                height: 0;
+            }
+        }
+
+        .sprite{
+            width: 47px;
+            height: 110px;
+            animation: scorp 1s steps(8) infinite ;
+        }
+        @keyframes scorp{
+            from{
+                background: url(img/949-9493148_scorpion-by-handtoeknee-sub-zero-sprite-sheet.png) 0px -115px;
+            }
+            to{
+                background: url(img/949-9493148_scorpion-by-handtoeknee-sub-zero-sprite-sheet.png) -400px -115px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    <div class="animation"></div>
+    </div>
+
+
+    <div class="sprite"></div>
+
+</body>
+
+</html>
