@@ -17,17 +17,21 @@
         var gender = confirm('ваш пол - мужской?')
         var age = Number(age)
 
-        (gender === true)
-            ? gender = ('мужчина')
-            : gender = ('женщина')
+        // (gender === true)
+        //     ? gender = ('мужчина')
+        //     : gender = ('женщина')
 
-        (gender === 'мужчина')
-                ? (age >= 63)
-                    ? var pensia = ('на пенсии')
-                    : var pensia = ('не на пенсии')
-                : (age >= 58)
-                    ? var pensia = ('на пенсии')
-                    : var pensia = ('не на пенсии')
+        // (gender === 'мужчина')
+        //     ? (age >= 63)
+        //         ? var pensia = ('на пенсии')
+        //         : var pensia = ('не на пенсии')
+        //     : (age >= 58)
+        //         ? var pensia = ('на пенсии')
+        //         : var pensia = ('не на пенсии')
+        gender = gender === true ? 'мужчина' : 'женщина';
+
+        var pensia = (gender === 'мужчина' && age >= 63) || (gender === 'женщина' && age >= 58) ? 'на пенсии': 'не на пенсии';
+                
 
 
         alert('Ваше ФИО:' + ' ' + (secondname) + ' ' + (name) + ' ' + (therdname) + '\n' +
