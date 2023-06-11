@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1920px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 34px;
+}
+
+.menu {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.3);
+
+    ul li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 86px;
+    }
+
+    ul:last-child li:first-child::before {
+        content: url(../img/Vector.png);
+    }
+
+    ul:last-child li:last-child::before {
+        content: url(../img/profile.png);
+    }
+}
+
+.slide {
+    background: url(../img/onairslide1.png);
+    width: 1923px;
+    height: 930px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    h3 {
+        margin-left: 70px;
+        margin-top: 340px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        color: #FFFFFF;
+        width: 523px;
+        height: 170px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    button {
+        margin-left: 70px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+        width: 238px;
+        height: 48px;
+        background: #E13C52;
+        border-radius: 60px;
+    }
+}
