@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+body {
+  background: #000000bd; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -24,6 +27,29 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 34px; }
+
+.greed {
+  display: grid;
+  grid-template-rows: 260px;
+  grid-template-columns: 260px 260px 260px 260px 260px 260px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.greedm {
+  display: grid;
+  grid-template-rows: 348px;
+  grid-template-columns: 231px 231px 231px 231px 231px 231px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.greedg {
+  display: grid;
+  grid-template-rows: 209px;
+  grid-template-columns: 209px 209px 209px 209px 209px 209px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .menu {
   font-family: 'Ubuntu';
@@ -78,5 +104,173 @@
     height: 48px;
     background: #E13C52;
     border-radius: 60px; }
+
+.content {
+  background: #FFFFFF1A;
+  -webkit-backdrop-filter: blur(10%);
+          backdrop-filter: blur(10%);
+  border: 1px solid rgba(0, 0, 0, 0); }
+  .content h3 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 35px; }
+  .content h3:first-child {
+    margin-top: 70px; }
+
+.recomended div {
+  width: 260px;
+  height: 260px;
+  border-radius: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 27px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .recomended div div {
+    width: 130px;
+    height: 136px;
+    background: #D9D9D9;
+    border-radius: 18px 0px 0px 18px;
+    padding-top: 85px; }
+    .recomended div div p {
+      width: 130px;
+      height: 51px;
+      background: #515151;
+      border-radius: 18px 0px 0px 18px; }
+.recomended div:nth-child(1) {
+  background: url(../img/series/1.png); }
+  .recomended div:nth-child(1) div {
+    background: #D9D9D9;
+    background: url(../img/chanel_logo/fox.png) no-repeat 24px 24px #D9D9D9; }
+.recomended div:nth-child(2) {
+  background: url(../img/series/2.png); }
+  .recomended div:nth-child(2) div {
+    background: url(../img/chanel_logo/abc.png) no-repeat 34px 14px #D9D9D9; }
+.recomended div:nth-child(3) {
+  background: url(../img/series/3.png); }
+  .recomended div:nth-child(3) div {
+    background: url(../img/chanel_logo/nbc.png) no-repeat 18px 14px #D9D9D9; }
+.recomended div:nth-child(4) {
+  background: url(../img/series/4.png); }
+  .recomended div:nth-child(4) div {
+    background: url(../img/chanel_logo/espn.png) no-repeat 14px 24px #D9D9D9; }
+.recomended div:nth-child(5) {
+  background: url(../img/series/5.png); }
+  .recomended div:nth-child(5) div {
+    background: url(../img/chanel_logo/usa.png) no-repeat 14px 14px #D9D9D9; }
+.recomended div:nth-child(6) {
+  background: url(../img/series/6.png); }
+  .recomended div:nth-child(6) div {
+    background: url(../img/chanel_logo/trutv.png) no-repeat 10px 14px #D9D9D9; }
+
+.chanels div {
+  width: 260px;
+  height: 260px;
+  border-radius: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 27px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .chanels div div {
+    width: 130px;
+    height: 136px;
+    background: #D9D9D9;
+    border-radius: 18px 0px 0px 18px;
+    padding-top: 85px; }
+    .chanels div div p {
+      width: 130px;
+      height: 51px;
+      background: #515151;
+      border-radius: 18px 0px 0px 18px; }
+.chanels div:nth-child(1) {
+  background: url(../img/series/7.png); }
+  .chanels div:nth-child(1) div {
+    background: #D9D9D9;
+    background: url(../img/chanel_logo/fx.png) no-repeat 10px 14px #D9D9D9; }
+.chanels div:nth-child(2) {
+  background: url(../img/series/8.png); }
+  .chanels div:nth-child(2) div {
+    background: url(../img/chanel_logo/bravo.png) no-repeat 14px 10px #D9D9D9; }
+.chanels div:nth-child(3) {
+  background: url(../img/series/2.png); }
+  .chanels div:nth-child(3) div {
+    background: url(../img/chanel_logo/abc.png) no-repeat 34px 14px #D9D9D9; }
+.chanels div:nth-child(4) {
+  background: url(../img/series/10.png); }
+  .chanels div:nth-child(4) div {
+    background: url(../img/chanel_logo/fox_news.png) no-repeat 14px 14px #D9D9D9; }
+.chanels div:nth-child(5) {
+  background: url(../img/series/11.png); }
+  .chanels div:nth-child(5) div {
+    background: url(../img/chanel_logo/fbs.png) no-repeat 10px 10px #D9D9D9; }
+.chanels div:nth-child(6) {
+  background: url(../img/series/9.png); }
+  .chanels div:nth-child(6) div {
+    background: url(../img/chanel_logo/trutv.png) no-repeat 10px 14px #D9D9D9; }
+
+.popmovies div {
+  width: 231px;
+  height: 348px; }
+.popmovies div:nth-child(1) {
+  background: url(../img/movie/m1.png); }
+.popmovies div:nth-child(2) {
+  background: url(../img/movie/m2.png); }
+.popmovies div:nth-child(3) {
+  background: url(../img/movie/m3.png); }
+.popmovies div:nth-child(4) {
+  background: url(../img/movie/m4.png); }
+.popmovies div:nth-child(5) {
+  background: url(../img/movie/m5.png); }
+.popmovies div:nth-child(6) {
+  background: url(../img/movie/m6.png); }
+
+.recmovies div {
+  width: 231px;
+  height: 348px; }
+.recmovies div:nth-child(1) {
+  background: url(../img/movie/m4.png); }
+.recmovies div:nth-child(2) {
+  background: url(../img/movie/m2.png); }
+.recmovies div:nth-child(3) {
+  background: url(../img/movie/m7.png); }
+.recmovies div:nth-child(4) {
+  background: url(../img/movie/m6.png); }
+.recmovies div:nth-child(5) {
+  background: url(../img/movie/m1.png); }
+.recmovies div:nth-child(6) {
+  background: url(../img/movie/m3.png); }
+
+.games div {
+  width: 209px;
+  height: 209px;
+  border-radius: 20px; }
+.games div:nth-child(1) {
+  background: url(../img/games/batman.png); }
+.games div:nth-child(2) {
+  background: url(../img/games/ACV.png); }
+.games div:nth-child(3) {
+  background: url(../img/games/Sonic_DashPlus.png); }
+.games div:nth-child(4) {
+  background: url(../img/games/mario.png); }
+.games div:nth-child(5) {
+  background: url(../img/games/fortnite.png); }
+.games div:nth-child(6) {
+  background: url(../img/games/horizon.png); }
 
 /*# sourceMappingURL=style_main.css.map */

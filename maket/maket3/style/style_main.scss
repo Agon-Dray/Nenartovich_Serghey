@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #000000bd;
+
+
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 1920px;
+
 }
 
 .flex {
@@ -16,6 +23,28 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 34px;
+}
+
+.greed {
+    display: grid;
+    grid-template-rows: 260px;
+    grid-template-columns: 260px 260px 260px 260px 260px 260px;
+    column-gap: 20px;
+    justify-content: space-around;
+}
+
+.greedm {
+    display: grid;
+    grid-template-rows: 348px;
+    grid-template-columns: 231px 231px 231px 231px 231px 231px;
+    justify-content: space-around;
+}
+
+.greedg {
+    display: grid;
+    grid-template-rows: 209px;
+    grid-template-columns: 209px 209px 209px 209px 209px 209px;
+    justify-content: space-around;
 }
 
 .menu {
@@ -76,5 +105,284 @@
         height: 48px;
         background: #E13C52;
         border-radius: 60px;
+    }
+}
+
+.content {
+    background: #FFFFFF1A;
+    backdrop-filter: blur(10%);
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    h3 {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #FFFFFF;
+        padding-left: 40px;
+        margin-top: 100px;
+        margin-bottom: 35px;
+    }
+
+    h3:first-child {
+        margin-top: 70px;
+    }
+}
+
+.recomended {
+    div {
+        width: 260px;
+        height: 260px;
+        border-radius: 26px;
+        display: flex;
+        margin-bottom: 27px;
+        align-items: end;
+        justify-content: flex-end;
+
+        div {
+            width: 130px;
+            height: 136px;
+            background: #D9D9D9;
+            border-radius: 18px 0px 0px 18px;
+            padding-top: 85px;
+
+            p {
+                width: 130px;
+                height: 51px;
+                background: #515151;
+                border-radius: 18px 0px 0px 18px;
+            }
+        }
+    }
+
+    div:nth-child(1) {
+        background: url(../img/series/1.png);
+
+        div {
+            background: #D9D9D9;
+            background: url(../img/chanel_logo/fox.png) no-repeat 24px 24px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(2) {
+        background: url(../img/series/2.png);
+
+        div {
+            background: url(../img/chanel_logo/abc.png) no-repeat 34px 14px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(3) {
+        background: url(../img/series/3.png);
+
+        div {
+            background: url(../img/chanel_logo/nbc.png) no-repeat 18px 14px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(4) {
+        background: url(../img/series/4.png);
+
+        div {
+            background: url(../img/chanel_logo/espn.png) no-repeat 14px 24px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(5) {
+        background: url(../img/series/5.png);
+
+        div {
+            background: url(../img/chanel_logo/usa.png) no-repeat 14px 14px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(6) {
+        background: url(../img/series/6.png);
+
+        div {
+            background: url(../img/chanel_logo/trutv.png) no-repeat 10px 14px #D9D9D9;
+            ;
+        }
+    }
+}
+
+.chanels {
+    div {
+        width: 260px;
+        height: 260px;
+        border-radius: 26px;
+        display: flex;
+        margin-bottom: 27px;
+        align-items: end;
+        justify-content: flex-end;
+
+        div {
+            width: 130px;
+            height: 136px;
+            background: #D9D9D9;
+            border-radius: 18px 0px 0px 18px;
+            padding-top: 85px;
+
+            p {
+                width: 130px;
+                height: 51px;
+                background: #515151;
+                border-radius: 18px 0px 0px 18px;
+            }
+        }
+    }
+
+    div:nth-child(1) {
+        background: url(../img/series/7.png);
+
+        div {
+            background: #D9D9D9;
+            background: url(../img/chanel_logo/fx.png) no-repeat 10px 14px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(2) {
+        background: url(../img/series/8.png);
+
+        div {
+            background: url(../img/chanel_logo/bravo.png) no-repeat 14px 10px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(3) {
+        background: url(../img/series/2.png);
+
+        div {
+            background: url(../img/chanel_logo/abc.png) no-repeat 34px 14px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(4) {
+        background: url(../img/series/10.png);
+
+        div {
+            background: url(../img/chanel_logo/fox_news.png) no-repeat 14px 14px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(5) {
+        background: url(../img/series/11.png);
+
+        div {
+            background: url(../img/chanel_logo/fbs.png) no-repeat 10px 10px #D9D9D9;
+            ;
+        }
+    }
+
+    div:nth-child(6) {
+        background: url(../img/series/9.png);
+
+        div {
+            background: url(../img/chanel_logo/trutv.png) no-repeat 10px 14px #D9D9D9;
+            ;
+        }
+    }
+}
+
+.popmovies {
+    div {
+        width: 231px;
+        height: 348px;
+    }
+
+    div:nth-child(1) {
+        background: url(../img/movie/m1.png);
+    }
+
+    div:nth-child(2) {
+        background: url(../img/movie/m2.png);
+    }
+
+    div:nth-child(3) {
+        background: url(../img/movie/m3.png);
+    }
+
+    div:nth-child(4) {
+        background: url(../img/movie/m4.png);
+    }
+
+    div:nth-child(5) {
+        background: url(../img/movie/m5.png);
+    }
+
+    div:nth-child(6) {
+        background: url(../img/movie/m6.png);
+    }
+}
+
+.recmovies {
+    div {
+        width: 231px;
+        height: 348px;
+    }
+
+    div:nth-child(1) {
+        background: url(../img/movie/m4.png);
+    }
+
+    div:nth-child(2) {
+        background: url(../img/movie/m2.png);
+    }
+
+    div:nth-child(3) {
+        background: url(../img/movie/m7.png);
+    }
+
+    div:nth-child(4) {
+        background: url(../img/movie/m6.png);
+    }
+
+    div:nth-child(5) {
+        background: url(../img/movie/m1.png);
+    }
+
+    div:nth-child(6) {
+        background: url(../img/movie/m3.png);
+    }
+}
+
+.games {
+    div {
+        width: 209px;
+        height: 209px;
+        border-radius: 20px;
+    }
+
+    div:nth-child(1) {
+        background: url(../img/games/batman.png);
+    }
+
+    div:nth-child(2) {
+        background: url(../img/games/ACV.png);
+    }
+
+    div:nth-child(3) {
+        background: url(../img/games/Sonic_DashPlus.png);
+    }
+
+    div:nth-child(4) {
+        background: url(../img/games/mario.png);
+    }
+
+    div:nth-child(5) {
+        background: url(../img/games/fortnite.png);
+    }
+
+    div:nth-child(6) {
+        background: url(../img/games/horizon.png);
     }
 }
