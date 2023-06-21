@@ -23,9 +23,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 10px 34px; }
 
 .greed {
@@ -135,7 +132,9 @@ body {
           align-items: end;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  -webkit-transition: .5s;
+  transition: .5s; }
   .recomended div div {
     width: 130px;
     height: 136px;
@@ -147,6 +146,9 @@ body {
       height: 51px;
       background: #515151;
       border-radius: 18px 0px 0px 18px; }
+.recomended div:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5); }
 .recomended div:nth-child(1) {
   background: url(../img/series/1.png); }
   .recomended div:nth-child(1) div {
@@ -256,21 +258,61 @@ body {
 .recmovies div:nth-child(6) {
   background: url(../img/movie/m3.png); }
 
-.games div {
-  width: 209px;
-  height: 209px;
-  border-radius: 20px; }
-.games div:nth-child(1) {
-  background: url(../img/games/batman.png); }
-.games div:nth-child(2) {
-  background: url(../img/games/ACV.png); }
-.games div:nth-child(3) {
-  background: url(../img/games/Sonic_DashPlus.png); }
-.games div:nth-child(4) {
-  background: url(../img/games/mario.png); }
-.games div:nth-child(5) {
-  background: url(../img/games/fortnite.png); }
-.games div:nth-child(6) {
-  background: url(../img/games/horizon.png); }
+.games {
+  margin-bottom: 38px; }
+  .games div {
+    width: 209px;
+    height: 209px;
+    border-radius: 20px; }
+  .games div:nth-child(1) {
+    background: url(../img/games/batman.png); }
+  .games div:nth-child(2) {
+    background: url(../img/games/ACV.png); }
+  .games div:nth-child(3) {
+    background: url(../img/games/Sonic_DashPlus.png); }
+  .games div:nth-child(4) {
+    background: url(../img/games/mario.png); }
+  .games div:nth-child(5) {
+    background: url(../img/games/fortnite.png); }
+  .games div:nth-child(6) {
+    background: url(../img/games/horizon.png); }
+
+footer {
+  background: #191919;
+  border: 1px solid transparent; }
+  footer > p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #616161;
+    padding-left: 34px;
+    margin-bottom: 20px; }
+  footer div {
+    margin-top: 18px; }
+  footer div ul li {
+    list-style: none;
+    margin-bottom: 18px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #797979; }
+  footer div h3 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 18px; }
+  footer div p {
+    margin-top: 95px;
+    width: 280px;
+    height: 88px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8D8D8D; }
 
 /*# sourceMappingURL=style_main.css.map */

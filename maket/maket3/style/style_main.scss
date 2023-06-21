@@ -21,7 +21,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 10px 34px;
 }
 
@@ -138,6 +137,7 @@ body {
         margin-bottom: 27px;
         align-items: end;
         justify-content: flex-end;
+        transition: .5s;
 
         div {
             width: 130px;
@@ -154,7 +154,9 @@ body {
             }
         }
     }
-
+    div:hover{
+       transform: scale(1.5);
+    }
     div:nth-child(1) {
         background: url(../img/series/1.png);
 
@@ -356,6 +358,8 @@ body {
 }
 
 .games {
+    margin-bottom: 38px;
+
     div {
         width: 209px;
         height: 209px;
@@ -384,5 +388,52 @@ body {
 
     div:nth-child(6) {
         background: url(../img/games/horizon.png);
+    }
+}
+
+footer {
+    background: #191919;
+    border: 1px solid transparent;
+
+    >p{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #616161;
+        padding-left: 34px;
+        margin-bottom: 20px;
+    }
+    div{
+        margin-top: 18px;
+    }
+    div ul li {
+        list-style: none;
+        margin-bottom: 18px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #797979;
+    }
+
+    div h3 {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #FFFFFF;
+        margin-bottom: 18px;
+    }
+
+    div p {
+        margin-top: 95px;
+        width: 280px;
+        height: 88px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8D8D8D;
     }
 }
