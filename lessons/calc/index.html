@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        .calc{
+            width: 100px;
+            height: 200px;
+        }
+        .number{
+            display: grid;
+            grid-template-rows:15px 15px 15px 15px ;
+            grid-template-columns: 15px 15px 15px ;
+            row-gap: 5px;
+            column-gap: 5px;
+            justify-content: space-between;
+            
+        }
+        .sign{
+            display: grid;
+            grid-template-rows:15px 15px 15px 15px ;
+            grid-template-columns: 15px 15px 15px ;
+            justify-content: space-between;
+            row-gap: 5px;
+            column-gap: 5px;
+            margin-top: 10px;
+        }
+        input{
+            height: 15px;
+            width: 15px;
+            border-radius: 3px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<div class=calc>
+    <div class="number">
+    <input type="button" value="1" onclick="getNumber(1)">
+    <input type="button" value="2" onclick="getNumber(2)">
+    <input type="button" value="3" onclick="getNumber(3)">
+    <input type="button" value="4" onclick="getNumber(4)">
+    <input type="button" value="5" onclick="getNumber(5)">
+    <input type="button" value="6" onclick="getNumber(6)">
+    <input type="button" value="7" onclick="getNumber(7)">
+    <input type="button" value="8" onclick="getNumber(8)">
+    <input type="button" value="9" onclick="getNumber(9)">
+    <input type="button" value="0" onclick="getNumber(0)">
+    </div>
+    <div class="sign">
+    <input type="button" value="+" onclick="getSign('+')">
+    <input type="button" value="-" onclick="getSign('-')">
+    <input type="button" value="*" onclick="getSign('*')">
+    <input type="button" value="/" onclick="getSign('/')">
+    <input type="button" value="=" onclick="getResult()">
+    </div>
+</div>
+
+
+<script>
+
+    var x = null
+    var y = null
+    var oper = null
+    
+    function getNumber(number) {
+        if (x === null){
+            x = number
+        } else {
+            y = number
+        }
+    }
+
+    function getSign(sign) {
+        oper = sign
+    }
+     
+    function getResult(){
+        switch(oper){
+            case "+" : console.log(x+y); break;
+            case "-" : console.log(x-y); break;
+            case "*" : console.log(x*y); break;
+            case "/" : console.log(x/y); break;
+        }
+    }
+    
+</script>
+</body>
+</html>
