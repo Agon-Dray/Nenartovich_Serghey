@@ -1,0 +1,234 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\000031}}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\000037}}
+body {
+  background: #000000bd; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000311}}
+a {
+  color: inherit;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000316}}
+.container {
+  width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #191919;
+  border: 1px solid transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000324}}
+.container1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1780px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000330}}
+.container3 {
+  width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../img/app_bg.png);
+  border: 1px solid transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000338}}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000346}}
+.greed {
+  display: grid;
+  grid-template-rows: 240px 240px;
+  grid-template-columns: 430px 430px 430px 430px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  padding-left: 70px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000354}}
+.greedm {
+  display: grid;
+  grid-template-rows: 348px;
+  grid-template-columns: 231px 231px 231px 231px 231px 231px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000361}}
+.greedg {
+  display: grid;
+  grid-template-rows: 209px;
+  grid-template-columns: 209px 209px 209px 209px 209px 209px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000368}}
+.menu {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.3); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000376}}
+  .menu ul {
+    height: 100px;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000382}}
+  .menu ul li {
+    margin-left: 100px;
+    list-style: none;
+    margin-right: 86px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000389}}
+  .menu ul:last-child li:first-child::before {
+    content: url(../img/Vector.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000393}}
+  .menu ul:last-child li:last-child::before {
+    content: url(../img/profile.png); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\0000398}}
+.slide {
+  background: url(../img/bgm.png) no-repeat;
+  height: 850px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003105}}
+  .slide h3 {
+    margin-left: 70px;
+    margin-top: 340px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    color: #FFFFFF;
+    width: 523px;
+    height: 170px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003116}}
+    .slide h3 span {
+      font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003121}}
+  .slide button {
+    margin-left: 70px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 238px;
+    height: 48px;
+    background: #E13C52;
+    border-radius: 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003135}}
+.content {
+  background: #FFFFFF1A;
+  -webkit-backdrop-filter: blur(10%);
+          backdrop-filter: blur(10%);
+  border: 1px solid rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003140}}
+  .content h3 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 35px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003151}}
+  .content h3:first-child {
+    margin-top: 70px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003156}}
+.seasons li {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003161}}
+.season1 div:nth-child(1) {
+  background-image: url(../img/serial/1.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003164}}
+.season1 div:nth-child(2) {
+  background-image: url(../img/serial/2.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003167}}
+.season1 div:nth-child(3) {
+  background-image: url(../img/serial/3.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003170}}
+.season1 div:nth-child(4) {
+  background-image: url(../img/serial/4.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003173}}
+.season1 div:nth-child(5) {
+  background-image: url(../img/serial/1.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003176}}
+.season1 div:nth-child(6) {
+  background-image: url(../img/serial/2.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003179}}
+.season1 div:nth-child(7) {
+  background-image: url(../img/serial/3.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003182}}
+.season1 div:nth-child(8) {
+  background-image: url(../img/serial/4.png); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003187}}
+footer > p {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #616161;
+  padding-left: 34px;
+  margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003197}}
+footer div {
+  margin-top: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003201}}
+footer div ul li {
+  list-style: none;
+  margin-bottom: 18px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #797979; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003211}}
+footer div h3 {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/web\%20lessons\/Nenartovich_Serghey\/maket\/maket3\/style\/style_serial\.scss}line{font-family:\00003220}}
+footer div p {
+  margin-top: 95px;
+  width: 280px;
+  height: 88px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8D8D8D; }
+
+/*# sourceMappingURL=style_serial.css.map */
