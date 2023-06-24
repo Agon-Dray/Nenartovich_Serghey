@@ -6,17 +6,17 @@
 
 body {
     background: #000000bd;
-
-
-}
-
-.container {
+    width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    width: 1920px;
-
 }
 
+.container1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1780px;
+
+}
 .flex {
     display: flex;
     flex-direction: row;
@@ -28,8 +28,8 @@ body {
     display: grid;
     grid-template-rows: 260px;
     grid-template-columns: 260px 260px 260px 260px 260px 260px;
-    column-gap: 20px;
-    justify-content: space-around;
+    column-gap: 10px;
+    padding-left: 70px;
 }
 
 .greedm {
@@ -129,86 +129,119 @@ body {
 }
 
 .recomended {
-    div {
+    padding-left: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+
+    >div {
         width: 260px;
         height: 260px;
-        border-radius: 26px;
-        display: flex;
-        margin-bottom: 27px;
-        align-items: end;
-        justify-content: flex-end;
-        transition: .5s;
-
-        div {
-            width: 130px;
-            height: 136px;
-            background: #D9D9D9;
-            border-radius: 18px 0px 0px 18px;
-            padding-top: 85px;
-
-            p {
-                width: 130px;
-                height: 51px;
-                background: #515151;
-                border-radius: 18px 0px 0px 18px;
+        transition: 0.5s;
+    }
+    >div:hover{
+        transform: scale(1.7);
+        .name {
+            display: block;
+            transform: scale(0.6);
+        }
+        .actors{
+            display: block;
+            transform: scale(0.6);
+        }
+        .recens{
+            display: block;
+            button{
+                transform: scale(0.6);
+            }
+            p{
+                transform: scale(0.6);
             }
         }
+        
     }
-    div:hover{
-       transform: scale(1.5);
-    }
-    div:nth-child(1) {
-        background: url(../img/series/1.png);
 
-        div {
-            background: #D9D9D9;
-            background: url(../img/chanel_logo/fox.png) no-repeat 24px 24px #D9D9D9;
-            ;
+    .series {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .name {
+        display: none;
+        padding: 5px 0px;
+        color: #FFF;
+        font-size: 20px;
+        font-family: Ubuntu;
+        font-weight: 500;
+        width: 170px;
+        height: 66px;
+        border-radius: 13px;
+        background: rgba(0, 0, 0, 0.47);
+
+        h4{
+            padding: 3px 0px;
+        }
+
+
+        p {
+            text-align: center;
+            width: 169px;
+            height: 33px;
+            border-radius: 24px;
+            background: #FFF;
+            font-size: 20px;
+            font-family: Ubuntu;
+            font-weight: 500;
+            color: black;
         }
     }
 
-    div:nth-child(2) {
-        background: url(../img/series/2.png);
+    .actors {
+        display: none;
+        color: #FFF;
+        font-size: 20px;
+        font-family: Ubuntu;
+        font-weight: 500;
+        width: 170px;
+        height: 66px;
+        border-radius: 13px;
+        background: rgba(0, 0, 0, 0.47);
+        h4{
+            padding: 3px 0px;
+        }
 
-        div {
-            background: url(../img/chanel_logo/abc.png) no-repeat 34px 14px #D9D9D9;
-            ;
+        p {
+            text-align: center;
+            width: 169px;
+            height: 33px;
+            border-radius: 24px;
+            background: #FFF;
+            font-size: 20px;
+            font-family: Ubuntu;
+            font-weight: 500;
+            color: black;
         }
     }
-
-    div:nth-child(3) {
-        background: url(../img/series/3.png);
-
-        div {
-            background: url(../img/chanel_logo/nbc.png) no-repeat 18px 14px #D9D9D9;
-            ;
+    .recens{
+        display: none;
+        background: rgba(0, 0, 0, 0.80);
+        p{
+            color: #FFF;
+            font-size: 20px;
+            font-family: Ubuntu;
+            font-weight: 500; 
         }
-    }
-
-    div:nth-child(4) {
-        background: url(../img/series/4.png);
-
-        div {
-            background: url(../img/chanel_logo/espn.png) no-repeat 14px 24px #D9D9D9;
-            ;
-        }
-    }
-
-    div:nth-child(5) {
-        background: url(../img/series/5.png);
-
-        div {
-            background: url(../img/chanel_logo/usa.png) no-repeat 14px 14px #D9D9D9;
-            ;
-        }
-    }
-
-    div:nth-child(6) {
-        background: url(../img/series/6.png);
-
-        div {
-            background: url(../img/chanel_logo/trutv.png) no-repeat 10px 14px #D9D9D9;
-            ;
+        button{
+            width: 194px;
+            height: 48px;
+            padding: 10px 34px;
+            color: #FFF;
+            font-size: 24px;
+            font-family: Ubuntu;
+            font-weight: 500;
+            border-radius: 60px;
+            background: #E13C52;
         }
     }
 }
@@ -395,7 +428,7 @@ footer {
     background: #191919;
     border: 1px solid transparent;
 
-    >p{
+    >p {
         font-family: 'Ubuntu';
         font-style: normal;
         font-weight: 400;
@@ -404,9 +437,11 @@ footer {
         padding-left: 34px;
         margin-bottom: 20px;
     }
-    div{
+
+    div {
         margin-top: 18px;
     }
+
     div ul li {
         list-style: none;
         margin-bottom: 18px;

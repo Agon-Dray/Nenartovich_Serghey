@@ -5,12 +5,15 @@
           box-sizing: border-box; }
 
 body {
-  background: #000000bd; }
+  background: #000000bd;
+  width: 1920px;
+  margin-left: auto;
+  margin-right: auto; }
 
-.container {
+.container1 {
   margin-left: auto;
   margin-right: auto;
-  width: 1920px; }
+  width: 1780px; }
 
 .flex {
   display: -webkit-box;
@@ -29,10 +32,9 @@ body {
   display: grid;
   grid-template-rows: 260px;
   grid-template-columns: 260px 260px 260px 260px 260px 260px;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  padding-left: 70px; }
 
 .greedm {
   display: grid;
@@ -119,61 +121,115 @@ body {
   .content h3:first-child {
     margin-top: 70px; }
 
-.recomended div {
-  width: 260px;
-  height: 260px;
-  border-radius: 26px;
+.recomended {
+  padding-left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 27px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-transition: .5s;
-  transition: .5s; }
-  .recomended div div {
-    width: 130px;
-    height: 136px;
-    background: #D9D9D9;
-    border-radius: 18px 0px 0px 18px;
-    padding-top: 85px; }
-    .recomended div div p {
-      width: 130px;
-      height: 51px;
-      background: #515151;
-      border-radius: 18px 0px 0px 18px; }
-.recomended div:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5); }
-.recomended div:nth-child(1) {
-  background: url(../img/series/1.png); }
-  .recomended div:nth-child(1) div {
-    background: #D9D9D9;
-    background: url(../img/chanel_logo/fox.png) no-repeat 24px 24px #D9D9D9; }
-.recomended div:nth-child(2) {
-  background: url(../img/series/2.png); }
-  .recomended div:nth-child(2) div {
-    background: url(../img/chanel_logo/abc.png) no-repeat 34px 14px #D9D9D9; }
-.recomended div:nth-child(3) {
-  background: url(../img/series/3.png); }
-  .recomended div:nth-child(3) div {
-    background: url(../img/chanel_logo/nbc.png) no-repeat 18px 14px #D9D9D9; }
-.recomended div:nth-child(4) {
-  background: url(../img/series/4.png); }
-  .recomended div:nth-child(4) div {
-    background: url(../img/chanel_logo/espn.png) no-repeat 14px 24px #D9D9D9; }
-.recomended div:nth-child(5) {
-  background: url(../img/series/5.png); }
-  .recomended div:nth-child(5) div {
-    background: url(../img/chanel_logo/usa.png) no-repeat 14px 14px #D9D9D9; }
-.recomended div:nth-child(6) {
-  background: url(../img/series/6.png); }
-  .recomended div:nth-child(6) div {
-    background: url(../img/chanel_logo/trutv.png) no-repeat 10px 14px #D9D9D9; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  gap: 10px; }
+  .recomended > div {
+    width: 260px;
+    height: 260px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .recomended > div:hover {
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7); }
+    .recomended > div:hover .name {
+      display: block;
+      -webkit-transform: scale(0.6);
+              transform: scale(0.6); }
+    .recomended > div:hover .actors {
+      display: block;
+      -webkit-transform: scale(0.6);
+              transform: scale(0.6); }
+    .recomended > div:hover .recens {
+      display: block; }
+      .recomended > div:hover .recens button {
+        -webkit-transform: scale(0.6);
+                transform: scale(0.6); }
+      .recomended > div:hover .recens p {
+        -webkit-transform: scale(0.6);
+                transform: scale(0.6); }
+  .recomended .series {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative; }
+  .recomended .name {
+    display: none;
+    padding: 5px 0px;
+    color: #FFF;
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: 500;
+    width: 170px;
+    height: 66px;
+    border-radius: 13px;
+    background: rgba(0, 0, 0, 0.47); }
+    .recomended .name h4 {
+      padding: 3px 0px; }
+    .recomended .name p {
+      text-align: center;
+      width: 169px;
+      height: 33px;
+      border-radius: 24px;
+      background: #FFF;
+      font-size: 20px;
+      font-family: Ubuntu;
+      font-weight: 500;
+      color: black; }
+  .recomended .actors {
+    display: none;
+    color: #FFF;
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: 500;
+    width: 170px;
+    height: 66px;
+    border-radius: 13px;
+    background: rgba(0, 0, 0, 0.47); }
+    .recomended .actors h4 {
+      padding: 3px 0px; }
+    .recomended .actors p {
+      text-align: center;
+      width: 169px;
+      height: 33px;
+      border-radius: 24px;
+      background: #FFF;
+      font-size: 20px;
+      font-family: Ubuntu;
+      font-weight: 500;
+      color: black; }
+  .recomended .recens {
+    display: none;
+    background: rgba(0, 0, 0, 0.8); }
+    .recomended .recens p {
+      color: #FFF;
+      font-size: 20px;
+      font-family: Ubuntu;
+      font-weight: 500; }
+    .recomended .recens button {
+      width: 194px;
+      height: 48px;
+      padding: 10px 34px;
+      color: #FFF;
+      font-size: 24px;
+      font-family: Ubuntu;
+      font-weight: 500;
+      border-radius: 60px;
+      background: #E13C52; }
 
 .chanels div {
   width: 260px;
