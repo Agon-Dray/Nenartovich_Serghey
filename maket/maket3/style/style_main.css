@@ -5,7 +5,13 @@
           box-sizing: border-box; }
 
 body {
-  background: #000000bd;
+  background: #000000bd; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.container {
   width: 1920px;
   margin-left: auto;
   margin-right: auto; }
@@ -23,10 +29,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px 34px; }
+          justify-content: space-between; }
 
 .greed {
   display: grid;
@@ -50,6 +57,9 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+header {
+  background: url(../img/onairslide1.png) no-repeat; }
+
 .menu {
   font-family: 'Ubuntu';
   font-style: normal;
@@ -57,9 +67,13 @@ body {
   font-size: 24px;
   color: #FFFFFF;
   background: rgba(0, 0, 0, 0.3); }
+  .menu ul {
+    height: 100px;
+    -ms-flex-line-pack: center;
+        align-content: center; }
   .menu ul li {
+    margin-left: 100px;
     list-style: none;
-    display: inline-block;
     margin-right: 86px; }
   .menu ul:last-child li:first-child::before {
     content: url(../img/Vector.png); }
@@ -67,9 +81,7 @@ body {
     content: url(../img/profile.png); }
 
 .slide {
-  background: url(../img/onairslide1.png);
-  width: 1923px;
-  height: 930px;
+  height: 830px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -137,6 +149,7 @@ body {
   .recomended > div {
     width: 260px;
     height: 260px;
+    border-radius: 26px;
     -webkit-transition: 0.5s;
     transition: 0.5s; }
   .recomended > div:hover {
@@ -182,6 +195,7 @@ body {
       padding: 3px 0px; }
     .recomended .name p {
       text-align: center;
+      padding-top: 5px;
       width: 169px;
       height: 33px;
       border-radius: 24px;
@@ -204,6 +218,7 @@ body {
       padding: 3px 0px; }
     .recomended .actors p {
       text-align: center;
+      padding-top: 5px;
       width: 169px;
       height: 33px;
       border-radius: 24px;
@@ -214,7 +229,8 @@ body {
       color: black; }
   .recomended .recens {
     display: none;
-    background: rgba(0, 0, 0, 0.8); }
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 14px; }
     .recomended .recens p {
       color: #FFF;
       font-size: 20px;
